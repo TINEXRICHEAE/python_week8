@@ -1,0 +1,28 @@
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Weather App</h1>
+            <p>Get accurate weather updates for any location!</p>
+        </header>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Enter city, latitude/longitude, or any location clue">
+            <button id="searchButton">Search</button>
+        </div>
+        <div id="weatherDisplay" class="weather-display">
+            <p>Search for weather updates using the search bar above!</p>
+        </div>
+    </div>
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
+{% endblock %}
