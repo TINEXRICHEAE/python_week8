@@ -28,7 +28,7 @@ Follow these steps to set up the project on your local machine:
 
 2. **Navigate to the project directory**:
     ```bash
-    cd weather-app
+    cd weatherApp
     ```
 
 3. **Create and activate the virtual environment** (optional but recommended):
