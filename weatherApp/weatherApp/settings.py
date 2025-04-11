@@ -30,6 +30,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 # Now access the SECRET_KEY from the environment variables
 SECRET_KEY = os.getenv('SECRET_KEY')
+print(f"SECRET_KEY: {SECRET_KEY}")
 
 # If the SECRET_KEY is not found, raise an error (to ensure it's always set)
 if not SECRET_KEY:
