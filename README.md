@@ -2,11 +2,6 @@
 
 A Django-based weather application that provides real-time weather information using the OpenWeather API. Users can search for weather data using either city names or geographical coordinates.
 
-```markdown:g:\PLP\python\week8\python_week8\weatherApp\README.md
-# Weather App
-
-A Django-based weather application that provides real-time weather information using the OpenWeather API. Users can search for weather data using either city names or geographical coordinates.
-
 ## Features
 
 - Real-time weather data retrieval
@@ -53,7 +48,14 @@ python -m venv weza
 
 4. **Install dependencies**:
 ```bash
+# Upgrade pip
+python -m pip install --upgrade pip
+
+# Install requirements
 pip install -r requirements.txt
+
+# Alternatively: Use --trusted-host as a workaround virtual environment associated errors
+pip install -r requirements.txt --trusted-host pypi.org --trusted-host files.pythonhosted.org
 ```
 
 5. **Set up environment variables**:
@@ -80,9 +82,9 @@ python manage.py runserver
 
 1. When the app is running, open it in a browser
 2. Enter either:
-   - A city name (e.g., "London", "New York")
+   - A city name (e.g., "Kampala", "Soroti")
    - Geographical coordinates (latitude,longitude)
-3. Click the search button or press Enter
+3. Click the search button
 4. View the displayed weather information:
    - Current temperature
    - Weather condition
